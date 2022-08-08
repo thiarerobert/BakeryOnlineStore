@@ -1,0 +1,41 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.wrapper {
+    background-color: rgb(68, 28, 5);
+    max-width: 100rem;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.nav_wrapper {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+main {
+    flex: 1;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin: 0 0 1rem;
+}

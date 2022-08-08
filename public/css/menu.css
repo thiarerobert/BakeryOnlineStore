@@ -1,0 +1,29 @@
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    gap: 3rem;
+    margin-top: 5rem;
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.menu img {
+    width: 20rem;
+    height: 10rem;
+
+}
+
+.menu_item {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu_item_text {
+    cursor: pointer;
+    display: flex;
+    background-color: rgb(68, 28, 5);
+    justify-content: space-between;
+    color: #fff;
+}

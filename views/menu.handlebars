@@ -1,0 +1,15 @@
+
+<ul class="menu">
+    {{#each items}}
+        <li>
+            <div class="menu_item">
+                <img src="{{this.picture}}" alt="">
+                <div class="menu_item_text">
+                    <label>{{this.name}}</label> 
+                    <input type="submit" value="afficher" class="id_input">
+                </div>
+                
+            </div>
+        </li>
+    {{/each}}
+</ul>
