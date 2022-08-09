@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{title}}</title>
 
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
 
     {{#each styles}}
         <link rel="stylesheet" href={{this}}>
     {{/each}}
     {{#each scripts}}
-        <script type="module" src="{{this}}"></script>
+        <script type="module" src={{this}}></script>
     {{/each}}
 </head>
 <body>
@@ -27,6 +27,6 @@
 
     {{>footer}}
 
-    <script type="module" src="./js/main.js"></script>
+    <script type="module" src="/js/main.js"></script>
 </body>
 </html>

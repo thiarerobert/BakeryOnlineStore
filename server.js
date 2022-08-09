@@ -10,6 +10,7 @@ import cors from 'cors';
 import cspOption from './csp-options.js';
 import './model/connetion.js';
 import { getMenu } from './model/menu.js';
+import { getItem } from './model/item.js';
 
 // Création du serveur
 const app = express();
@@ -28,6 +29,7 @@ app.use(express.static('public'));
 app.get('/', (request, response) => {
     response.render('home', {
         title: 'Accueil',
+        styles: ['/css/home.css']
     });
 });
 
@@ -43,8 +45,18 @@ app.get('/menu', async (request, response) => {
 });
 
 //Route pour afficher le menu selon son id
-app.patch('/produit', (request, response) => {
-
+app.get('/menu/:idItem', async (request, response) => {
+    let item = await getItem (request.params.idItem);
+    
+    if(item){
+        response.render('item', {
+            title: "item",
+            item: item,
+        });
+    }
+    else {
+        response.status(404).end();
+    }
 });
 // Renvoyer une erreur 404 pour les routes non définies
 app.use(function (request, response) {

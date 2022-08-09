@@ -19,12 +19,12 @@ connectionPromise.then((connection) => {
 
             INSERT INTO Cake(name, picture, price, components)
             VALUES
-            ('Biscuit au pépite de chocolat', './img/biscuitCake.jpg', 7, 'Sugar blé crème'),
-            ('Gâteau ordinaire', './img/ordinaryCake.jpg', 10, 'Sugar blé crème'),
-            ('Gâteau personalisé', './img/personalizeCake.jpg', 20, 'Sugar blé crème'),
-            ('Gâteau rose', './img/pinkCake.jpg', 15, 'Sugar blé crème'),
-            ('Gâteau rouge', './img/redCake.jpg', 15, 'Sugar blé crème'),
-            ('Gâteau à la fraise', './img/strawberryCake.jpg', 17, 'Sugar blé crème');
+            ('Biscuit au pépite de chocolat', '/img/biscuitCake.jpg', 7, 'Sugar blé crème'),
+            ('Gâteau ordinaire', '/img/ordinaryCake.jpg', 10, 'Sugar blé crème'),
+            ('Gâteau personalisé', '/img/personalizeCake.jpg', 20, 'Sugar blé crème'),
+            ('Gâteau rose', '/img/pinkCake.jpg', 15, 'Sugar blé crème'),
+            ('Gâteau rouge', '/img/redCake.jpg', 15, 'Sugar blé crème'),
+            ('Gâteau à la fraise', '/img/strawberryCake.jpg', 17, 'Sugar blé crème');
         `
     );
 })
