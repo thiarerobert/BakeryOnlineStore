@@ -1,6 +1,26 @@
 
-<div>
-    {{item.name}}
+<div class="item-component">
+    <div class="item">
     <img src={{item.picture}} alt="">
-    {{item.price}}
+        <strong>
+        <p>
+            {{item.name}}
+        </p>
+        </strong>       
+    </div>
+    <div class="item-right">
+        <div class="right_text">
+            <strong>
+                <p>Ingrédients</p>
+            </strong>
+            {{item.components}}
+        </div>
+        <div class="right_form">
+            <form>
+                <input type="number" min="1" max="10" step="1">
+            </form>
+            <input type="button" value="Ajouter" class="add_button">
+        </div>
+    </div>
+    
 </div>

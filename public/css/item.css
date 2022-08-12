@@ -1,0 +1,55 @@
+.item-component {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.item p {
+    font-size: 25px;
+}
+
+.item-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.add_button {
+    background: rgb(68, 28, 5);
+    border: none;
+    width: 15rem;
+    height: 3rem;
+    border-radius: 2rem;
+    color: #fff;
+    font-size: 25px;
+}
+
+.add_button:hover{
+    background: white;
+    cursor: pointer;
+    color: rgb(68, 28, 5);
+    border: 1px solid rgb(68, 28, 5);
+}
+
+.right_text {
+    border: 1px solid;
+    height: 25rem;
+    width: 100%;
+    text-align: center;
+}
+
+.right_form {
+    display: flex;
+    gap: 1rem;
+    height: 3rem;
+    border: none;
+}

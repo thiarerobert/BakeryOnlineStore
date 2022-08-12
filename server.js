@@ -52,11 +52,20 @@ app.get('/menu/:idItem', async (request, response) => {
         response.render('item', {
             title: "item",
             item: item,
+            styles: ['/css/item.css']
         });
     }
     else {
         response.status(404).end();
     }
+});
+
+//Route pour afficher la page contacts.
+app.get('/contact', (request, response) => {
+    response.render ('contact', {
+        title: 'contact',
+        styles: ['/css/contact.css']
+    });
 });
 // Renvoyer une erreur 404 pour les routes non définies
 app.use(function (request, response) {
